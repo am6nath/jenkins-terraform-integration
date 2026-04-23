@@ -26,7 +26,7 @@ resource "aws_subnet" "public_subnet" {
 
 resource "aws_instance" "ec2" {
   ami           = "ami-070e5bd3ff10324f8" # Ubuntu
-  instance_type = "t3.micro"
+  instance_type = "t3.small"
   subnet_id     = aws_subnet.public_subnet.id
   key_name      = "MCA-EC2-Key"           # Your key pair for SSH access
 }
