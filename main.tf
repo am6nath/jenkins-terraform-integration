@@ -12,7 +12,7 @@ provider "aws" {
 }
 
 resource "aws_s3_bucket" "demo_bucket" {
-  bucket = "amarnath17"
+  bucket = "amarnath17-terraform-demo-001"
 }
 
 resource "aws_vpc" "demo_vpc" {
